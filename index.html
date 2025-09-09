@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BHARAT4U</title>
+    <meta name="description" content="BHARAT4U – podcasts, actus du jour, et votre board.">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-offer" role="region" aria-label="Promotion">
+            <p><strong>To awaken pride, preserve culture, and speak the untold truths of Bharat — for every heart that beats for the nation.</strong></p>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+            <a class="brand" href="#" aria-label="BHARAT4U homepage">
+                <span class="brand-mark">BF</span> <span class="brand-name">BHARAT4U</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#news">Today’s News</a></li>
+                <li><a href="#board">On This Day</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#collaborate" class="button small">Collaborate</a>
+                <a href="tel:+33481685600" class="phone">+91 788 068 1469</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Hero">
+            <div class="hero-media" role="img" aria-label="Différentes cultures de l'Inde">
+                <video class="bg-video" autoplay muted loop playsinline preload="auto">
+                    <source src="public/homepage_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1>BHARAT4U</h1>
+                <p>For every heart that beats for the nation.</p>
+                <div class="hero-actions">
+                    <a href="#podcast" class="button">🎙️ Listen to Bharat 4 U Podcast</a>
+                    <a href="#news" class="button secondary">📰 Today’s News</a>
+                </div>
+            </div>
+        </section>
+        <section id="podcast" class="section">
+            <header class="section-header">
+                <h2>Podcast</h2>
+                <p>🔔 Tune In: Truth, Culture & Awareness</p>
+            </header>
+            <div class="trip-grid">
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1600&auto=format&fit=crop" alt="Podcast studio">
+                    <div class="trip-body">
+                        <h3>The Lost Heritage of India 🪔</h3>
+                        <p class="meta">45 min • Invité: Guide arctique</p>
+                        <a class="button small" href="#">Play Now</a>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop" alt="Podcast studio">
+                    <div class="trip-body">
+                        <h3>Bharat Bulletin – This Week in India 📰</h3>
+                        <p class="meta">38 min • Solo</p>
+                        <a class="button small" href="#">Play Now</a>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=1600&auto=format&fit=crop" alt="Microphone">
+                    <div class="trip-body">
+                        <h3>Wake Up Bharat – Youth for Nation 🔥</h3>
+                        <p class="meta">52 min • Roundtable</p>
+                        <a class="button small" href="#">Play Now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="collaborate" class="section">
+            <header class="section-header">
+                <h2>Collaborate with BHARAT4U</h2>
+                <p>Send us a note about partnerships, podcasts, or contributions.</p>
+            </header>
+            <form id="collab-form" class="collab-form" aria-label="Collaborate via email">
+                <div class="form-row">
+                    <label for="collab-name">Your Name</label>
+                    <input id="collab-name" name="name" type="text" placeholder="Full name" required>
+                </div>
+                <div class="form-row">
+                    <label for="collab-email">Your Email</label>
+                    <input id="collab-email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="collab-subject">Subject</label>
+                    <input id="collab-subject" name="subject" type="text" placeholder="Collaboration subject" required>
+                </div>
+                <div class="form-row">
+                    <label for="collab-message">Message</label>
+                    <textarea id="collab-message" name="message" rows="5" placeholder="Tell us how you'd like to collaborate" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="button">Send Email</button>
+                </div>
+                <p class="hint">This opens your email app with a prefilled message.</p>
+            </form>
+        </section>
+
+        <section id="news" class="section alt">
+            <header class="section-header">
+                <h2>Today’s News</h2>
+                <p>Les actus sélectionnées du jour en un coup d’œil.</p>
+            </header>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" alt="Breaking news" loading="lazy">
+                    <div class="card-body">
+                        <h3>Titres du matin</h3>
+                        <a href="#" class="link">Lire</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=1200&auto=format&fit=crop" alt="Tech news" loading="lazy">
+                    <div class="card-body">
+                        <h3>Tech & IA</h3>
+                        <a href="#" class="link">Lire</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1536250853074-5084fad8a1f5?q=80&w=1200&auto=format&fit=crop" alt="Eco news" loading="lazy">
+                    <div class="card-body">
+                        <h3>Économie</h3>
+                        <a href="#" class="link">Lire</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200&auto=format&fit=crop" alt="Culture" loading="lazy">
+                    <div class="card-body">
+                        <h3>Culture</h3>
+                        <a href="#" class="link">Lire</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="board" class="section">
+            <header class="section-header">
+                <h2>📜 On This Day in Bharat’s History</h2>
+                <p>— related to Indian culture, freedom struggle, science, politics, or spirituality.</p>
+            </header>
+            <div class="testimonials">
+                <blockquote>
+                    <p>Ajoutez ici vos notes rapides. Bientôt: stockage local et épingles.</p>
+                    <footer>— BHARAT4U</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section alt">
+            <header class="section-header">
+                <h2>About Bharat 4 U</h2>
+            </header>
+            <div class="testimonials">
+                <blockquote>
+                    <p>🌟 Our Vision</p>
+                    <footer>— "To revive the soul of Bharat by sharing untold truths, timeless culture, and voices that inspire a stronger nation."</footer>
+                </blockquote>
+                <blockquote>
+                    <p>🤝 Our Commitment</p>
+                    <footer>— "We promise authenticity, awareness, and respect for India’s heritage — delivering content that informs, empowers, and unites every Indian heart."</footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>BHARAT4U</h3>
+                <p>For every heart that beats for the nation.</p>
+                <p><a href="tel:+33481685600">+91 788 068 1469</a></p>
+            </div>
+        </div>
+        <p class="copy">© <span id="year"></span> BHARAT4U. For every heart that beats for the nation.</p>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
+

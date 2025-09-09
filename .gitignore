@@ -1,0 +1,23 @@
+# Node and tooling (even if not used yet)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Local env
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Large media
+public/homepage_video.mp4
+*.mp4
+
